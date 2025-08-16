@@ -11,6 +11,7 @@ export default function NavbarLogo() {
                     fill
                     sizes="(max-width: 768px) 30px, 50px"
                     className="rounded-full ml-2 "
+                    priority
                 />
             </div>
         </Link>

@@ -2,8 +2,11 @@
 
 import { MagnifyingGlassIcon, FunnelIcon } from "@heroicons/react/24/outline";
 import SearchHandler from "@/functions/searchBar/searchHandler";
+import ScrollListener from "@/functions/scrollListener";
 
 export default function SearchBar() {
+  const scrollDirection = ScrollListener();
+
   return (
     <form 
       className="relative w-full"
@@ -29,6 +32,5 @@ export default function SearchBar() {
         </div>
       </div>
   </form>
-
   );
 }

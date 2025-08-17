@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react';
 import { SunIcon, MoonIcon} from '@heroicons/react/24/solid';
+import { useTheme } from '@/context/ThemeContext';
 
 const toggleClass = {
     div: "flex items-center",
@@ -12,7 +12,8 @@ const toggleClass = {
 };
 
 export default function Toggle() {
-    const [check, setCheck] = useState(false);
+
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <div className={toggleClass.div}>
@@ -20,12 +21,12 @@ export default function Toggle() {
                 <input 
                     type="checkbox"
                     value=""
-                    checked={check}
-                    onChange={() => {setCheck(!check); console.log("Dark mode toggle clicked")}}
+                    checked={theme === 'dark'}
+                    onChange={toggleTheme}
                     className={toggleClass.input} />
                     <div className={toggleClass.body}>
-                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all ${check ? "opacity-100" : "opacity-30"}`} />
-                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all ${!check ? "opacity-100" : "opacity-30"}`} />
+                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all ${theme === 'dark' ? "opacity-100" : "opacity-30"}`} />
+                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all ${theme === 'light' ? "opacity-100" : "opacity-30"}`} />
                     </div>
             </label>
         </div>

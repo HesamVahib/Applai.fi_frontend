@@ -1,6 +1,8 @@
 import FavoriteIcon from "./FavoriteIcon";
+import { Job } from "@/lib/types";
 
-export default function JobCard({ job } : { job: { id: number; title: string; company: string; location: string; datePosted: string; link: string; } }) {
+export default function JobCard({ job } : { job: Job }) {
+
   return (
     <div className="flex justify-between items-center border-b-2 pb-3 border-gray-300 py-4">
     <div key={job.id} className="">
@@ -12,7 +14,7 @@ export default function JobCard({ job } : { job: { id: number; title: string; co
         <h3 className="text-lg font-semibold">{job.title}</h3>
       </a>
       <p className="text-sm text-gray-500 mt-1">
-        {job.company} - {job.location} - {job.datePosted}
+        {job.company} - {job.city} - {job.date}
       </p>
     </div>
     <FavoriteIcon jobId={job.id} />

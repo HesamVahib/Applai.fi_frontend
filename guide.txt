@@ -1,0 +1,7 @@
+useSearchParams // fetching the route params
+
+URLSearchParams // to set a parameters of route
+
+useRouter // sending something to the route
+
+useInfiniteQuery // use inifite query to have pagination

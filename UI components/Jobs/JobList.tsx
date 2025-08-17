@@ -1,6 +1,8 @@
 import JobCard from "./JobCard";
+import { Job } from "@/lib/types";
 
-export default function JobList({ jobs }: { jobs: Array<{ id: number; title: string; company: string; location: string; datePosted: string; link: string; }> }) {
+export default function JobList({ jobs }: { jobs: Job[] }) {
+
   return (
     <div className="w-full">
       {jobs.map((job) => (

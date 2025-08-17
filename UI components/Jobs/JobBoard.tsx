@@ -1,23 +1,19 @@
 'use client'
 
 import JobList from "./JobList";
-
-const jobs = Array.from({ length: 50 }, (_, i) => ({
-    id: i + 1,
-    link: "https://www.google.com",
-    title: ["Software Engineer", "Product Manager", "UX Designer"][i % 3],
-    category: ["Engineering", "Product", "Design"][i % 3],
-    company: ["Tech Company", "Another Tech Company", "Design Studio"][i % 3],
-    location: ["Helsinki", "On-Remote", "Turku"][i % 3],
-    datePosted: `${(i % 7) + 1} days ago`,
-}));
+import { useJobs } from "@/hooks/useJobs";
 
 export default function JobBoard() {
+  
+  const { data: jobs, isLoading, error } = useJobs();
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error loading jobs</div>;
 
   return (
     <div className="w-full flex flex-col items-center">
       <div className="w-full">
-        <JobList jobs={jobs} />
+        <JobList jobs={jobs || []} />
       </div>
     </div>
   );

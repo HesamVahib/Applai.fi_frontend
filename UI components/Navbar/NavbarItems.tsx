@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link";
-import Toggle from "../Toggle";
+import Toggle from "../DarkModeToggle";
 import Button from "../Button";
 import loginButton from "@/functions/loginButton";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "company": "TechCorp",
+        "title": "Software Engineer",
+        "city": "Helsinki",
+        "date": "2024-06-10",
+        "link": "https://techcorp.com/jobs/1"
+    },
+    {
+        "id": 2,
+        "company": "InnovateX",
+        "title": "Data Analyst",
+        "city": "Espoo",
+        "date": "2024-06-09",
+        "link": "https://innovatex.com/jobs/2"
+    },
+    {
+        "id": 3,
+        "company": "GreenSoft",
+        "title": "Frontend Developer",
+        "city": "Tampere",
+        "date": "2024-06-08",
+        "link": "https://greensoft.com/jobs/3"
+    }
+]

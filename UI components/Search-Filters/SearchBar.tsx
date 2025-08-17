@@ -1,11 +1,8 @@
-'use client'
-
-import { MagnifyingGlassIcon, FunnelIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import SearchHandler from "@/functions/searchBar/searchHandler";
-import ScrollListener from "@/functions/scrollListener";
 
 export default function SearchBar() {
-  const scrollDirection = ScrollListener();
+
 
   return (
     <form 

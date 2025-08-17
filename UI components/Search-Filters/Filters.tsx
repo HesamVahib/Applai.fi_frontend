@@ -1,5 +1,3 @@
-"use client";
-
 import ResetFilterButton from "./ResetFilterButton";
 import FilterButton from "./FilterButton";
 

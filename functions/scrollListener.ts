@@ -1,8 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function ScrollListener() {
 
-  const lastScrollY = useRef(0);
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down' | null>(null);
 
   useEffect(() => {
@@ -11,12 +10,11 @@ export default function ScrollListener() {
 
         // console.log(`Current Scroll Position: ${currentScrollY}`);
 
-        if (currentScrollY > lastScrollY.current) {
+        if (currentScrollY > 100) {
             setScrollDirection('down');
-        } else if (currentScrollY < lastScrollY.current) {
+        } else if (currentScrollY <= 100) {
             setScrollDirection('up');
         }
-        lastScrollY.current = currentScrollY;
       };
     
       window.addEventListener('scroll', handleScroll);
@@ -25,7 +23,7 @@ export default function ScrollListener() {
         console.log("Removing scroll event listener");
         window.removeEventListener('scroll', handleScroll);
       };
-  }, []); // Add scrollDirection to dependency array
+  }, []);
 
   return scrollDirection;
 }

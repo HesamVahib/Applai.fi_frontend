@@ -1,7 +1,6 @@
 'use client'
 
 import JobList from "./JobList";
-import ScrollListener from "@/functions/scrollListener";
 
 const jobs = Array.from({ length: 50 }, (_, i) => ({
     id: i + 1,

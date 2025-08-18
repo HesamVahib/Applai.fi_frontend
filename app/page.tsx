@@ -4,10 +4,10 @@ import BackToTop from "@/UI components/BackToTop";
 
 export default function Home() {
   return (
-    <div className="p-5 relative max-w-3xl mx-auto">
-      <SearchBlock />
-      <JobBoard />
-      <BackToTop />
-    </div>
+      <div className="p-5 relative max-w-3xl mx-auto">
+        <SearchBlock />
+        <JobBoard />
+        <BackToTop />
+      </div>
   );
 }

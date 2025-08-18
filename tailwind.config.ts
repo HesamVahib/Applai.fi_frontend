@@ -1,3 +1,23 @@
-module.exports = {
-  darkMode: 'class', // allows <div class="dark"> to enable dark mode
+/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class", // important for next-themes
+  theme: {
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        sans: "var(--font-sans)",
+        mono: "var(--font-mono)",
+      },
+    },
+  },
+  plugins: [],
 };

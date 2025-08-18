@@ -1,7 +1,9 @@
 'use client'
 
 import { SunIcon, MoonIcon} from '@heroicons/react/24/solid';
-import { useTheme } from '@/context/ThemeContext';
+// import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from "next-themes";
+import { useState, useEffect } from 'react';
 
 const toggleClass = {
     div: "flex items-center",
@@ -13,7 +15,13 @@ const toggleClass = {
 
 export default function Toggle() {
 
-    const { theme, toggleTheme } = useTheme();
+    const { setTheme, resolvedTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => setMounted(true), []);
+    if (!mounted) return null;
+
+    console.log("Current theme:", resolvedTheme);
 
     return (
         <div className={toggleClass.div}>
@@ -21,12 +29,12 @@ export default function Toggle() {
                 <input 
                     type="checkbox"
                     value=""
-                    checked={theme === 'dark'}
-                    onChange={toggleTheme}
+                    checked={resolvedTheme === 'dark'}
+                    onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                     className={toggleClass.input} />
                     <div className={toggleClass.body}>
-                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all ${theme === 'dark' ? "opacity-100" : "opacity-30"}`} />
-                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all ${theme === 'light' ? "opacity-100" : "opacity-30"}`} />
+                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all ${resolvedTheme === 'dark' ? "opacity-100" : "opacity-30"}`} />
+                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all ${resolvedTheme === 'light' ? "opacity-100" : "opacity-30"}`} />
                     </div>
             </label>
         </div>

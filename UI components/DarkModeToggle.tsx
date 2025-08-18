@@ -1,7 +1,6 @@
 'use client'
 
 import { SunIcon, MoonIcon} from '@heroicons/react/24/solid';
-// import { useTheme } from '@/context/ThemeContext';
 import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react';
 

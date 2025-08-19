@@ -18,9 +18,27 @@ export default function Toggle() {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => setMounted(true), []);
-    if (!mounted) return null;
 
-    console.log("Current theme:", resolvedTheme);
+    if (!mounted) {
+        return (
+            <div className={toggleClass.div}>
+            <label className={toggleClass.label}>
+                <input 
+                    type="checkbox"
+                    value=""
+                    checked={resolvedTheme === 'dark'}
+                    onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+                    className={toggleClass.input} />
+                    <div className={toggleClass.body}>
+                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all`} />
+                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all`} />
+                    </div>
+            </label>
+        </div>
+        )
+    }
+
+    // console.log("Current theme:", resolvedTheme);
 
     return (
         <div className={toggleClass.div}>

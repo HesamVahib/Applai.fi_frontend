@@ -17,7 +17,7 @@ export default function SearchBar() {
             type="text"
             name="search"
             placeholder="Search Keywords: C++"
-            className="bg-gray-800 text-white rounded-full py-5 pl-5 pr-12 flex focus:outline-none focus:ring-2 focus:ring-blue-500 w-full placeholder:text-white-800 dark:bg-gray-900"
+            className="bg-gray-800 text-white rounded-full py-5 pl-5 pr-12 flex focus:outline-none focus:ring-2 focus:ring-blue-500 w-full placeholder:text-white-800"
             onChange={(e) => SearchHandler({ searched: e.target.value })}
             />
           <button

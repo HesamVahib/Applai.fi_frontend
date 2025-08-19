@@ -20,3 +20,4 @@ export type ThemeContextType = {
 };
 
 export type Theme = 'light' | 'dark';
+

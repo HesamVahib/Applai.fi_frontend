@@ -6,6 +6,10 @@ import useCategory from "@/hooks/useCategories";
 import { useState, useEffect } from "react";
 import { FilterButtonProps } from "@/lib/types";
 
+const classes = {
+  select: "h-10 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white hover:cursor-pointer hover:shadow-md",
+  icon: "hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400"
+};
 
 export default function FilterButton({id, resetSignal}: FilterButtonProps) {
 
@@ -32,7 +36,7 @@ export default function FilterButton({id, resetSignal}: FilterButtonProps) {
           setValue(e.target.value);
           FilterHandler({ e, id, router });
         }}
-        className="h-10 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white hover:cursor-pointer hover:shadow-md">
+        className={classes.select}>
         <option value="All">All</option>
         {
           options?.map((item, index) => (
@@ -42,7 +46,7 @@ export default function FilterButton({id, resetSignal}: FilterButtonProps) {
           ))
         }
     </select>
-    <ChevronDownIcon className="hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400 " />
+    <ChevronDownIcon className={classes.icon} />
     </div>
   );
 }

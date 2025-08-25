@@ -10,13 +10,3 @@ export async function fetchAllJobs(): Promise<Job[]> {
         throw error;
     }
 }
-
-export async function fetchFilteredJobs({ searchParams }: { searchParams: URLSearchParams }): Promise<Job[]> {
-    try {
-        const response = await api.get("/jobs", { params: searchParams });
-        return response.data;
-    } catch (error) {
-        console.error("Error fetching filtered jobs:", error);
-        throw error;
-    }
-}

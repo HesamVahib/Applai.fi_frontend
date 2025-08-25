@@ -2,10 +2,14 @@
 
 import JobList from "./JobList";
 import { useJobs } from "@/hooks/useJobs";
+import { useSearchParams } from "next/navigation";
 
 export default function JobBoard() {
-  
-  const { data: jobs, isLoading, error } = useJobs();
+
+  const searchParams = useSearchParams();
+  // console.log("Search Params in JobBoard:", searchParams?.toString());
+
+  const { data: jobs, isLoading, error } = useJobs({ searchParams });
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading jobs</div>;

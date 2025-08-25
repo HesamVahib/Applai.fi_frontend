@@ -6,7 +6,8 @@
             "title": "QA Tester",
             "city": "Helsinki",
             "date": "2024-06-09",
-            "link": "https://innovatex.com/jobs/1"
+            "link": "https://innovatex.com/jobs/1",
+            "category": "Quality Assurance"
         },
         {
             "id": 2,
@@ -14,7 +15,8 @@
             "title": "UX Designer",
             "city": "Oulu",
             "date": "2024-06-08",
-            "link": "https://innovatex.com/jobs/2"
+            "link": "https://innovatex.com/jobs/2",
+            "category": "User Experience"
         },
         {
             "id": 3,
@@ -22,7 +24,8 @@
             "title": "Machine Learning Engineer",
             "city": "Lahti",
             "date": "2024-06-07",
-            "link": "https://buildit.com/jobs/3"
+            "link": "https://buildit.com/jobs/3",
+            "category": "Engineering"
         },
         {
             "id": 4,
@@ -30,7 +33,8 @@
             "title": "Cloud Architect",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-06-06",
-            "link": "https://techcorp.com/jobs/4"
+            "link": "https://techcorp.com/jobs/4",
+            "category": "Cloud Computing"
         },
         {
             "id": 5,
@@ -38,7 +42,8 @@
             "title": "Data Analyst",
             "city": "Kuopio",
             "date": "2024-06-05",
-            "link": "https://finanalytics.com/jobs/5"
+            "link": "https://finanalytics.com/jobs/5",
+            "category": "Data"
         },
         {
             "id": 6,
@@ -46,7 +51,8 @@
             "title": "Machine Learning Engineer",
             "city": "Tampere",
             "date": "2024-06-04",
-            "link": "https://cybernet.com/jobs/6"
+            "link": "https://cybernet.com/jobs/6",
+            "category": "Engineering"
         },
         {
             "id": 7,
@@ -54,7 +60,8 @@
             "title": "Frontend Developer",
             "city": "Tampere",
             "date": "2024-06-03",
-            "link": "https://cybernet.com/jobs/7"
+            "link": "https://cybernet.com/jobs/7",
+            "category": "Development"
         },
         {
             "id": 8,
@@ -62,7 +69,8 @@
             "title": "Cloud Architect",
             "city": "Espoo",
             "date": "2024-06-02",
-            "link": "https://cloudify.com/jobs/8"
+            "link": "https://cloudify.com/jobs/8",
+            "category": "Cloud Computing"
         },
         {
             "id": 9,
@@ -70,7 +78,8 @@
             "title": "QA Tester",
             "city": "Tampere",
             "date": "2024-06-01",
-            "link": "https://finanalytics.com/jobs/9"
+            "link": "https://finanalytics.com/jobs/9",
+            "category": "Quality Assurance"
         },
         {
             "id": 10,
@@ -78,7 +87,8 @@
             "title": "DevOps Engineer",
             "city": "Tampere",
             "date": "2024-05-31",
-            "link": "https://buildit.com/jobs/10"
+            "link": "https://buildit.com/jobs/10",
+            "category": "DevOps"
         },
         {
             "id": 11,
@@ -86,7 +96,8 @@
             "title": "Product Manager",
             "city": "Kuopio",
             "date": "2024-05-30",
-            "link": "https://finanalytics.com/jobs/11"
+            "link": "https://finanalytics.com/jobs/11",
+            "category": "Product Management"
         },
         {
             "id": 12,
@@ -94,7 +105,8 @@
             "title": "QA Tester",
             "city": "Oulu",
             "date": "2024-05-29",
-            "link": "https://innovatex.com/jobs/12"
+            "link": "https://innovatex.com/jobs/12",
+            "category": "Quality Assurance"
         },
         {
             "id": 13,
@@ -102,7 +114,8 @@
             "title": "Machine Learning Engineer",
             "city": "Helsinki",
             "date": "2024-05-28",
-            "link": "https://techcorp.com/jobs/13"
+            "link": "https://techcorp.com/jobs/13",
+            "category": "Engineering"
         },
         {
             "id": 14,
@@ -110,7 +123,8 @@
             "title": "Frontend Developer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-05-27",
-            "link": "https://greensoft.com/jobs/14"
+            "link": "https://greensoft.com/jobs/14",
+            "category": "Development"
         },
         {
             "id": 15,
@@ -118,7 +132,8 @@
             "title": "Backend Developer",
             "city": "Espoo",
             "date": "2024-05-26",
-            "link": "https://agritech.com/jobs/15"
+            "link": "https://agritech.com/jobs/15",
+            "category": "Development"
         },
         {
             "id": 16,
@@ -126,7 +141,8 @@
             "title": "Data Analyst",
             "city": "Espoo",
             "date": "2024-05-25",
-            "link": "https://techcorp.com/jobs/16"
+            "link": "https://techcorp.com/jobs/16",
+            "category": "Data"
         },
         {
             "id": 17,
@@ -134,7 +150,8 @@
             "title": "Business Analyst",
             "city": "Espoo",
             "date": "2024-05-24",
-            "link": "https://cloudify.com/jobs/17"
+            "link": "https://cloudify.com/jobs/17",
+            "category": "Business"
         },
         {
             "id": 18,
@@ -142,7 +159,8 @@
             "title": "Frontend Developer",
             "city": "Lahti",
             "date": "2024-05-23",
-            "link": "https://greensoft.com/jobs/18"
+            "link": "https://greensoft.com/jobs/18",
+            "category": "Development"
         },
         {
             "id": 19,
@@ -150,7 +168,8 @@
             "title": "Backend Developer",
             "city": "Kuopio",
             "date": "2024-05-22",
-            "link": "https://edutech.com/jobs/19"
+            "link": "https://edutech.com/jobs/19",
+            "category": "Development"
         },
         {
             "id": 20,
@@ -158,7 +177,8 @@
             "title": "IT Support Specialist",
             "city": "Turku",
             "date": "2024-05-21",
-            "link": "https://dataworks.com/jobs/20"
+            "link": "https://dataworks.com/jobs/20",
+            "category": "IT Support"
         },
         {
             "id": 21,
@@ -166,7 +186,8 @@
             "title": "Product Manager",
             "city": "Turku",
             "date": "2024-05-20",
-            "link": "https://meditech.com/jobs/21"
+            "link": "https://meditech.com/jobs/21",
+            "category": "Product Management"
         },
         {
             "id": 22,
@@ -174,7 +195,8 @@
             "title": "Business Analyst",
             "city": "Oulu",
             "date": "2024-05-19",
-            "link": "https://robodynamics.com/jobs/22"
+            "link": "https://robodynamics.com/jobs/22",
+            "category": "Business"
         },
         {
             "id": 23,
@@ -182,7 +204,8 @@
             "title": "Machine Learning Engineer",
             "city": "Tampere",
             "date": "2024-05-18",
-            "link": "https://nextgenai.com/jobs/23"
+            "link": "https://nextgenai.com/jobs/23",
+            "category": "Engineering"
         },
         {
             "id": 24,
@@ -190,7 +213,8 @@
             "title": "Data Scientist",
             "city": "Tampere",
             "date": "2024-05-17",
-            "link": "https://techcorp.com/jobs/24"
+            "link": "https://techcorp.com/jobs/24",
+            "category": "Data"
         },
         {
             "id": 25,
@@ -198,7 +222,8 @@
             "title": "Product Manager",
             "city": "Oulu",
             "date": "2024-05-16",
-            "link": "https://biosoft.com/jobs/25"
+            "link": "https://biosoft.com/jobs/25",
+            "category": "Product Management"
         },
         {
             "id": 26,
@@ -206,7 +231,8 @@
             "title": "Frontend Developer",
             "city": "Helsinki",
             "date": "2024-05-15",
-            "link": "https://nextgenai.com/jobs/26"
+            "link": "https://nextgenai.com/jobs/26",
+            "category": "Development"
         },
         {
             "id": 27,
@@ -214,7 +240,8 @@
             "title": "Frontend Developer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-05-14",
-            "link": "https://buildit.com/jobs/27"
+            "link": "https://buildit.com/jobs/27",
+            "category": "Development"
         },
         {
             "id": 28,
@@ -222,7 +249,8 @@
             "title": "Product Manager",
             "city": "Tampere",
             "date": "2024-05-13",
-            "link": "https://finanalytics.com/jobs/28"
+            "link": "https://finanalytics.com/jobs/28",
+            "category": "Product Management"
         },
         {
             "id": 29,
@@ -230,7 +258,8 @@
             "title": "DevOps Engineer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-05-12",
-            "link": "https://greensoft.com/jobs/29"
+            "link": "https://greensoft.com/jobs/29",
+            "category": "DevOps"
         },
         {
             "id": 30,
@@ -238,7 +267,8 @@
             "title": "Data Scientist",
             "city": "Oulu",
             "date": "2024-05-11",
-            "link": "https://robodynamics.com/jobs/30"
+            "link": "https://robodynamics.com/jobs/30",
+            "category": "Data"
         },
         {
             "id": 31,
@@ -246,7 +276,8 @@
             "title": "IT Support Specialist",
             "city": "Turku",
             "date": "2024-05-10",
-            "link": "https://greensoft.com/jobs/31"
+            "link": "https://greensoft.com/jobs/31",
+            "category": "IT Support"
         },
         {
             "id": 32,
@@ -254,7 +285,8 @@
             "title": "QA Tester",
             "city": "Turku",
             "date": "2024-05-09",
-            "link": "https://finanalytics.com/jobs/32"
+            "link": "https://finanalytics.com/jobs/32",
+            "category": "Quality Assurance"
         },
         {
             "id": 33,
@@ -262,7 +294,8 @@
             "title": "Cloud Architect",
             "city": "Helsinki",
             "date": "2024-05-08",
-            "link": "https://meditech.com/jobs/33"
+            "link": "https://meditech.com/jobs/33",
+            "category": "Cloud Computing"
         },
         {
             "id": 34,
@@ -270,7 +303,8 @@
             "title": "Software Engineer",
             "city": "Turku",
             "date": "2024-05-07",
-            "link": "https://finanalytics.com/jobs/34"
+            "link": "https://finanalytics.com/jobs/34",
+            "category": "Engineering"
         },
         {
             "id": 35,
@@ -278,7 +312,8 @@
             "title": "Full Stack Developer",
             "city": "Turku",
             "date": "2024-05-06",
-            "link": "https://cybernet.com/jobs/35"
+            "link": "https://cybernet.com/jobs/35",
+            "category": "Development"
         },
         {
             "id": 36,
@@ -286,7 +321,8 @@
             "title": "Frontend Developer",
             "city": "Espoo",
             "date": "2024-05-05",
-            "link": "https://innovatex.com/jobs/36"
+            "link": "https://innovatex.com/jobs/36",
+            "category": "Development"
         },
         {
             "id": 37,
@@ -294,7 +330,8 @@
             "title": "Full Stack Developer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-05-04",
-            "link": "https://cybernet.com/jobs/37"
+            "link": "https://cybernet.com/jobs/37",
+            "category": "Development"
         },
         {
             "id": 38,
@@ -302,7 +339,8 @@
             "title": "Cloud Architect",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-05-03",
-            "link": "https://buildit.com/jobs/38"
+            "link": "https://buildit.com/jobs/38",
+            "category": "Cloud Computing"
         },
         {
             "id": 39,
@@ -310,7 +348,8 @@
             "title": "Frontend Developer",
             "city": "Espoo",
             "date": "2024-05-02",
-            "link": "https://smartvision.com/jobs/39"
+            "link": "https://smartvision.com/jobs/39",
+            "category": "Development"
         },
         {
             "id": 40,
@@ -318,7 +357,8 @@
             "title": "Data Analyst",
             "city": "Espoo",
             "date": "2024-05-01",
-            "link": "https://robodynamics.com/jobs/40"
+            "link": "https://robodynamics.com/jobs/40",
+            "category": "Data"
         },
         {
             "id": 41,
@@ -326,7 +366,8 @@
             "title": "Software Engineer",
             "city": "Tampere",
             "date": "2024-04-30",
-            "link": "https://edutech.com/jobs/41"
+            "link": "https://edutech.com/jobs/41",
+            "category": "Engineering"
         },
         {
             "id": 42,
@@ -334,7 +375,8 @@
             "title": "Full Stack Developer",
             "city": "Tampere",
             "date": "2024-04-29",
-            "link": "https://edutech.com/jobs/42"
+            "link": "https://edutech.com/jobs/42",
+            "category": "Development"
         },
         {
             "id": 43,
@@ -342,7 +384,8 @@
             "title": "Software Engineer",
             "city": "Kuopio",
             "date": "2024-04-28",
-            "link": "https://dataworks.com/jobs/43"
+            "link": "https://dataworks.com/jobs/43",
+            "category": "Engineering"
         },
         {
             "id": 44,
@@ -350,7 +393,8 @@
             "title": "Business Analyst",
             "city": "Lahti",
             "date": "2024-04-27",
-            "link": "https://cybernet.com/jobs/44"
+            "link": "https://cybernet.com/jobs/44",
+            "category": "Business"
         },
         {
             "id": 45,
@@ -358,7 +402,8 @@
             "title": "Data Scientist",
             "city": "Oulu",
             "date": "2024-04-26",
-            "link": "https://meditech.com/jobs/45"
+            "link": "https://meditech.com/jobs/45",
+            "category": "Data"
         },
         {
             "id": 46,
@@ -366,7 +411,8 @@
             "title": "Backend Developer",
             "city": "Helsinki",
             "date": "2024-04-25",
-            "link": "https://dataworks.com/jobs/46"
+            "link": "https://dataworks.com/jobs/46",
+            "category": "Development"
         },
         {
             "id": 47,
@@ -374,7 +420,8 @@
             "title": "IT Support Specialist",
             "city": "Kuopio",
             "date": "2024-04-24",
-            "link": "https://dataworks.com/jobs/47"
+            "link": "https://dataworks.com/jobs/47",
+            "category": "IT Support"
         },
         {
             "id": 48,
@@ -382,7 +429,8 @@
             "title": "System Administrator",
             "city": "Lahti",
             "date": "2024-04-23",
-            "link": "https://smartvision.com/jobs/48"
+            "link": "https://smartvision.com/jobs/48",
+            "category": "System Administration"
         },
         {
             "id": 49,
@@ -390,7 +438,8 @@
             "title": "IT Support Specialist",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-04-22",
-            "link": "https://techcorp.com/jobs/49"
+            "link": "https://techcorp.com/jobs/49",
+            "category": "IT Support"
         },
         {
             "id": 50,
@@ -398,7 +447,8 @@
             "title": "Frontend Developer",
             "city": "Espoo",
             "date": "2024-04-21",
-            "link": "https://techcorp.com/jobs/50"
+            "link": "https://techcorp.com/jobs/50",
+            "category": "Development"
         },
         {
             "id": 51,
@@ -406,7 +456,8 @@
             "title": "System Administrator",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-04-20",
-            "link": "https://cloudify.com/jobs/51"
+            "link": "https://cloudify.com/jobs/51",
+            "category": "System Administration"
         },
         {
             "id": 52,
@@ -414,7 +465,8 @@
             "title": "Business Analyst",
             "city": "Tampere",
             "date": "2024-04-19",
-            "link": "https://agritech.com/jobs/52"
+            "link": "https://agritech.com/jobs/52",
+            "category": "Business"
         },
         {
             "id": 53,
@@ -422,7 +474,8 @@
             "title": "QA Tester",
             "city": "Helsinki",
             "date": "2024-04-18",
-            "link": "https://nextgenai.com/jobs/53"
+            "link": "https://nextgenai.com/jobs/53",
+            "category": "Quality Assurance"
         },
         {
             "id": 54,
@@ -430,7 +483,8 @@
             "title": "UX Designer",
             "city": "Turku",
             "date": "2024-04-17",
-            "link": "https://finanalytics.com/jobs/54"
+            "link": "https://finanalytics.com/jobs/54",
+            "category": "User Experience"
         },
         {
             "id": 55,
@@ -438,7 +492,8 @@
             "title": "Product Manager",
             "city": "Espoo",
             "date": "2024-04-16",
-            "link": "https://dataworks.com/jobs/55"
+            "link": "https://dataworks.com/jobs/55",
+            "category": "Product Management"
         },
         {
             "id": 56,
@@ -446,7 +501,8 @@
             "title": "Cloud Architect",
             "city": "Oulu",
             "date": "2024-04-15",
-            "link": "https://biosoft.com/jobs/56"
+            "link": "https://biosoft.com/jobs/56",
+            "category": "Cloud Computing"
         },
         {
             "id": 57,
@@ -454,7 +510,8 @@
             "title": "DevOps Engineer",
             "city": "Espoo",
             "date": "2024-04-14",
-            "link": "https://biosoft.com/jobs/57"
+            "link": "https://biosoft.com/jobs/57",
+            "category": "DevOps"
         },
         {
             "id": 58,
@@ -462,7 +519,8 @@
             "title": "Data Scientist",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-04-13",
-            "link": "https://cybernet.com/jobs/58"
+            "link": "https://cybernet.com/jobs/58",
+            "category": "Data"
         },
         {
             "id": 59,
@@ -470,7 +528,8 @@
             "title": "Full Stack Developer",
             "city": "Tampere",
             "date": "2024-04-12",
-            "link": "https://dataworks.com/jobs/59"
+            "link": "https://dataworks.com/jobs/59",
+            "category": "Development"
         },
         {
             "id": 60,
@@ -478,7 +537,8 @@
             "title": "DevOps Engineer",
             "city": "Turku",
             "date": "2024-04-11",
-            "link": "https://dataworks.com/jobs/60"
+            "link": "https://dataworks.com/jobs/60",
+            "category": "DevOps"
         },
         {
             "id": 61,
@@ -486,7 +546,8 @@
             "title": "Product Manager",
             "city": "Kuopio",
             "date": "2024-04-10",
-            "link": "https://biosoft.com/jobs/61"
+            "link": "https://biosoft.com/jobs/61",
+            "category": "Product Management"
         },
         {
             "id": 62,
@@ -494,7 +555,8 @@
             "title": "Data Analyst",
             "city": "Helsinki",
             "date": "2024-04-09",
-            "link": "https://robodynamics.com/jobs/62"
+            "link": "https://robodynamics.com/jobs/62",
+            "category": "Data"
         },
         {
             "id": 63,
@@ -502,7 +564,8 @@
             "title": "Frontend Developer",
             "city": "Helsinki",
             "date": "2024-04-08",
-            "link": "https://edutech.com/jobs/63"
+            "link": "https://edutech.com/jobs/63",
+            "category": "Development"
         },
         {
             "id": 64,
@@ -510,7 +573,8 @@
             "title": "QA Tester",
             "city": "Oulu",
             "date": "2024-04-07",
-            "link": "https://innovatex.com/jobs/64"
+            "link": "https://innovatex.com/jobs/64",
+            "category": "Quality Assurance"
         },
         {
             "id": 65,
@@ -518,7 +582,8 @@
             "title": "Full Stack Developer",
             "city": "Kuopio",
             "date": "2024-04-06",
-            "link": "https://greensoft.com/jobs/65"
+            "link": "https://greensoft.com/jobs/65",
+            "category": "Development"
         },
         {
             "id": 66,
@@ -526,7 +591,8 @@
             "title": "UX Designer",
             "city": "Tampere",
             "date": "2024-04-05",
-            "link": "https://cybernet.com/jobs/66"
+            "link": "https://cybernet.com/jobs/66",
+            "category": "User Experience"
         },
         {
             "id": 67,
@@ -534,7 +600,8 @@
             "title": "System Administrator",
             "city": "Turku",
             "date": "2024-04-04",
-            "link": "https://meditech.com/jobs/67"
+            "link": "https://meditech.com/jobs/67",
+            "category": "System Administration"
         },
         {
             "id": 68,
@@ -542,7 +609,8 @@
             "title": "QA Tester",
             "city": "Oulu",
             "date": "2024-04-03",
-            "link": "https://innovatex.com/jobs/68"
+            "link": "https://innovatex.com/jobs/68",
+            "category": "Quality Assurance"
         },
         {
             "id": 69,
@@ -550,7 +618,8 @@
             "title": "Cloud Architect",
             "city": "Helsinki",
             "date": "2024-04-02",
-            "link": "https://dataworks.com/jobs/69"
+            "link": "https://dataworks.com/jobs/69",
+            "category": "Cloud Computing"
         },
         {
             "id": 70,
@@ -558,7 +627,8 @@
             "title": "UX Designer",
             "city": "Oulu",
             "date": "2024-04-01",
-            "link": "https://robodynamics.com/jobs/70"
+            "link": "https://robodynamics.com/jobs/70",
+            "category": "User Experience"
         },
         {
             "id": 71,
@@ -566,7 +636,8 @@
             "title": "Data Scientist",
             "city": "Lahti",
             "date": "2024-03-31",
-            "link": "https://robodynamics.com/jobs/71"
+            "link": "https://robodynamics.com/jobs/71",
+            "category": "Data"
         },
         {
             "id": 72,
@@ -574,7 +645,8 @@
             "title": "Full Stack Developer",
             "city": "Tampere",
             "date": "2024-03-30",
-            "link": "https://smartvision.com/jobs/72"
+            "link": "https://smartvision.com/jobs/72",
+            "category": "Development"
         },
         {
             "id": 73,
@@ -582,7 +654,8 @@
             "title": "Frontend Developer",
             "city": "Espoo",
             "date": "2024-03-29",
-            "link": "https://agritech.com/jobs/73"
+            "link": "https://agritech.com/jobs/73",
+            "category": "Development"
         },
         {
             "id": 74,
@@ -590,7 +663,8 @@
             "title": "Business Analyst",
             "city": "Helsinki",
             "date": "2024-03-28",
-            "link": "https://biosoft.com/jobs/74"
+            "link": "https://biosoft.com/jobs/74",
+            "category": "Business"
         },
         {
             "id": 75,
@@ -598,7 +672,8 @@
             "title": "Data Scientist",
             "city": "Kuopio",
             "date": "2024-03-27",
-            "link": "https://buildit.com/jobs/75"
+            "link": "https://buildit.com/jobs/75",
+            "category": "Data"
         },
         {
             "id": 76,
@@ -606,7 +681,8 @@
             "title": "System Administrator",
             "city": "Espoo",
             "date": "2024-03-26",
-            "link": "https://agritech.com/jobs/76"
+            "link": "https://agritech.com/jobs/76",
+            "category": "System Administration"
         },
         {
             "id": 77,
@@ -614,7 +690,8 @@
             "title": "IT Support Specialist",
             "city": "Turku",
             "date": "2024-03-25",
-            "link": "https://nextgenai.com/jobs/77"
+            "link": "https://nextgenai.com/jobs/77",
+            "category": "IT Support"
         },
         {
             "id": 78,
@@ -622,7 +699,8 @@
             "title": "Backend Developer",
             "city": "Lahti",
             "date": "2024-03-24",
-            "link": "https://buildit.com/jobs/78"
+            "link": "https://buildit.com/jobs/78",
+            "category": "Development"
         },
         {
             "id": 79,
@@ -630,7 +708,8 @@
             "title": "System Administrator",
             "city": "Oulu",
             "date": "2024-03-23",
-            "link": "https://cloudify.com/jobs/79"
+            "link": "https://cloudify.com/jobs/79",
+            "category": "System Administration"
         },
         {
             "id": 80,
@@ -638,7 +717,8 @@
             "title": "QA Tester",
             "city": "Lahti",
             "date": "2024-03-22",
-            "link": "https://buildit.com/jobs/80"
+            "link": "https://buildit.com/jobs/80",
+            "category": "Quality Assurance"
         },
         {
             "id": 81,
@@ -646,7 +726,8 @@
             "title": "Backend Developer",
             "city": "Kuopio",
             "date": "2024-03-21",
-            "link": "https://nextgenai.com/jobs/81"
+            "link": "https://nextgenai.com/jobs/81",
+            "category": "Development"
         },
         {
             "id": 82,
@@ -654,7 +735,8 @@
             "title": "Cloud Architect",
             "city": "Helsinki",
             "date": "2024-03-20",
-            "link": "https://cloudify.com/jobs/82"
+            "link": "https://cloudify.com/jobs/82",
+            "category": "Cloud Computing"
         },
         {
             "id": 83,
@@ -662,7 +744,8 @@
             "title": "DevOps Engineer",
             "city": "Kuopio",
             "date": "2024-03-19",
-            "link": "https://robodynamics.com/jobs/83"
+            "link": "https://robodynamics.com/jobs/83",
+            "category": "DevOps"
         },
         {
             "id": 84,
@@ -670,7 +753,8 @@
             "title": "Machine Learning Engineer",
             "city": "Turku",
             "date": "2024-03-18",
-            "link": "https://greensoft.com/jobs/84"
+            "link": "https://greensoft.com/jobs/84",
+            "category": "Engineering"
         },
         {
             "id": 85,
@@ -678,7 +762,8 @@
             "title": "Data Scientist",
             "city": "Turku",
             "date": "2024-03-17",
-            "link": "https://nextgenai.com/jobs/85"
+            "link": "https://nextgenai.com/jobs/85",
+            "category": "Data"
         },
         {
             "id": 86,
@@ -686,7 +771,8 @@
             "title": "IT Support Specialist",
             "city": "Oulu",
             "date": "2024-03-16",
-            "link": "https://nextgenai.com/jobs/86"
+            "link": "https://nextgenai.com/jobs/86",
+            "category": "IT Support"
         },
         {
             "id": 87,
@@ -694,7 +780,8 @@
             "title": "IT Support Specialist",
             "city": "Lahti",
             "date": "2024-03-15",
-            "link": "https://techcorp.com/jobs/87"
+            "link": "https://techcorp.com/jobs/87",
+            "category": "IT Support"
         },
         {
             "id": 88,
@@ -702,7 +789,8 @@
             "title": "UX Designer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-03-14",
-            "link": "https://greensoft.com/jobs/88"
+            "link": "https://greensoft.com/jobs/88",
+            "category": "User Experience"
         },
         {
             "id": 89,
@@ -710,7 +798,8 @@
             "title": "Full Stack Developer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-03-13",
-            "link": "https://innovatex.com/jobs/89"
+            "link": "https://innovatex.com/jobs/89",
+            "category": "Development"
         },
         {
             "id": 90,
@@ -718,7 +807,8 @@
             "title": "Product Manager",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-03-12",
-            "link": "https://nextgenai.com/jobs/90"
+            "link": "https://nextgenai.com/jobs/90",
+            "category": "Product Management"
         },
         {
             "id": 91,
@@ -726,7 +816,8 @@
             "title": "Cloud Architect",
             "city": "Oulu",
             "date": "2024-03-11",
-            "link": "https://cloudify.com/jobs/91"
+            "link": "https://cloudify.com/jobs/91",
+            "category": "Cloud Computing"
         },
         {
             "id": 92,
@@ -734,7 +825,8 @@
             "title": "IT Support Specialist",
             "city": "Oulu",
             "date": "2024-03-10",
-            "link": "https://biosoft.com/jobs/92"
+            "link": "https://biosoft.com/jobs/92",
+            "category": "IT Support"
         },
         {
             "id": 93,
@@ -742,7 +834,8 @@
             "title": "Business Analyst",
             "city": "Kuopio",
             "date": "2024-03-09",
-            "link": "https://biosoft.com/jobs/93"
+            "link": "https://biosoft.com/jobs/93",
+            "category": "Business"
         },
         {
             "id": 94,
@@ -750,7 +843,8 @@
             "title": "DevOps Engineer",
             "city": "Tampere",
             "date": "2024-03-08",
-            "link": "https://biosoft.com/jobs/94"
+            "link": "https://biosoft.com/jobs/94",
+            "category": "DevOps"
         },
         {
             "id": 95,
@@ -758,7 +852,8 @@
             "title": "IT Support Specialist",
             "city": "Lahti",
             "date": "2024-03-07",
-            "link": "https://innovatex.com/jobs/95"
+            "link": "https://innovatex.com/jobs/95",
+            "category": "IT Support"
         },
         {
             "id": 96,
@@ -766,7 +861,8 @@
             "title": "Software Engineer",
             "city": "Turku",
             "date": "2024-03-06",
-            "link": "https://biosoft.com/jobs/96"
+            "link": "https://biosoft.com/jobs/96",
+            "category": "Engineering"
         },
         {
             "id": 97,
@@ -774,7 +870,8 @@
             "title": "Cloud Architect",
             "city": "Kuopio",
             "date": "2024-03-05",
-            "link": "https://nextgenai.com/jobs/97"
+            "link": "https://nextgenai.com/jobs/97",
+            "category": "Cloud Computing"
         },
         {
             "id": 98,
@@ -782,7 +879,8 @@
             "title": "Frontend Developer",
             "city": "Jyv\u00e4skyl\u00e4",
             "date": "2024-03-04",
-            "link": "https://meditech.com/jobs/98"
+            "link": "https://meditech.com/jobs/98",
+            "category": "Development"
         },
         {
             "id": 99,
@@ -790,7 +888,8 @@
             "title": "QA Tester",
             "city": "Lahti",
             "date": "2024-03-03",
-            "link": "https://dataworks.com/jobs/99"
+            "link": "https://dataworks.com/jobs/99",
+            "category": "Quality Assurance"
         },
         {
             "id": 100,
@@ -798,7 +897,8 @@
             "title": "Frontend Developer",
             "city": "Helsinki",
             "date": "2024-03-02",
-            "link": "https://smartvision.com/jobs/100"
+            "link": "https://smartvision.com/jobs/100",
+            "category": "Development"
         }
     ],
     "users": [

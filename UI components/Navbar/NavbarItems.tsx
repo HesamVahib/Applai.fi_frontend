@@ -43,7 +43,7 @@ export default function NavbarItems() {
         </div>
         <div>
           <li>
-            <Button className="h-full mr-2" onClick={loginButton}>
+            <Button className="h-full mr-2 " onClick={loginButton}>
               Login/Sign Up
             </Button>
           </li>

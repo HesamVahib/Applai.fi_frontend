@@ -1,15 +1,18 @@
 import ResetFilterButton from "./ResetFilterButton";
 import FilterButton from "./FilterButton";
+import { useState } from "react";
 
 export default function Filters() {
+  const [resetSignal, setResetSignal] = useState(false);
+
   return (
     <>
       <div className="w-full flex justify-center mt-3">
         <div className="w-full flex gap-2">
-          <FilterButton id="city" name="City" />
-          <FilterButton id="date" name="Date" />
-          <FilterButton id="category" name="Category" />
-          <ResetFilterButton />
+          <FilterButton id="city" resetSignal={resetSignal} />
+          <FilterButton id="date" resetSignal={resetSignal} />
+          <FilterButton id="category" resetSignal={resetSignal} />
+          <ResetFilterButton resetSignal={resetSignal} setResetSignal={setResetSignal} />
         </div>
       </div>
       <div className="w-full flex justify-center">

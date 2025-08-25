@@ -1,29 +1,46 @@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import FilterHandler from "@/functions/searchBar/filterHandler";
 import { useRouter } from "next/navigation";
+import useCity from "@/hooks/useCities";
+import useCategory from "@/hooks/useCategories";
+import { useState, useEffect } from "react";
+import { FilterButtonProps } from "@/lib/types";
 
-type FilterButtonProps = {
-    id: string;
-    name: string;
-};
 
-export default function FilterButton({id, name}: FilterButtonProps) {
+export default function FilterButton({id, resetSignal}: FilterButtonProps) {
 
   const router = useRouter();
+  const { data: cities} = useCity();
+  const { data: categories } = useCategory();
+
+  const postDate = [ "Last Hour", "Today", "This Week", "This Month" ];
+
+  const options = id === "city" ? cities : id === "category" ? categories : id === "date" ? postDate : [];
+  // console.log("Options for", id, ":", options);
+  const [ value, setValue ] = useState("All");
+
+  useEffect(() => {
+    setValue("All");
+  }, [resetSignal]);
 
   return (
     <div className="relative w-full">
       <select
         id={id}
-        defaultValue={name}
+        value={value}
         onChange={(e) => {
+          setValue(e.target.value);
           FilterHandler({ e, id, router });
         }}
-        className="h-10 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white">
-        <option value={`${name}1`}>{`${name}1`}</option>
-        <option value={`${name}2`}>{`${name}2`}</option>
-        <option value={`${name}3`}>{`${name}3`}</option>
-        <option value={`${name}4`}>{`${name}4`}</option>
+        className="h-10 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white hover:cursor-pointer hover:shadow-md">
+        <option value="All">All</option>
+        {
+          options?.map((item, index) => (
+            <option key={index} value={item}>
+              {item}
+            </option>
+          ))
+        }
     </select>
     <ChevronDownIcon className="hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400 " />
     </div>

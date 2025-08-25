@@ -14,3 +14,7 @@ use dropdown from headlessui/react
 multi select filter // multi select react
 
 order filter params
+
+when head to plain adddress the filter buttons should be reset
+
+save filters

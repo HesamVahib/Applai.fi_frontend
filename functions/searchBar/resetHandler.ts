@@ -8,5 +8,6 @@ export default function resetHandler({ router, searchParams }: { router: any, se
   params.delete("city");
   params.delete("category");
   params.delete("date");
+  params.delete("keyword");
   router.push(`?${params.toString()}`);
 }

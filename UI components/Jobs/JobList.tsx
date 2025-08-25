@@ -1,6 +1,5 @@
 import JobCard from "./JobCard";
 import { Job } from "@/lib/types";
-import { useSearchParams } from "next/navigation";
 
 export default function JobList({ jobs }: { jobs: Job[] }) {
 

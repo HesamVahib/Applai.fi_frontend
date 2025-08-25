@@ -19,7 +19,7 @@ export default function FilterHandler({ e, id, router }
     const params = new URLSearchParams(window.location.search);
     params.set(id, selectedValues.join(','));
 
-    const order = ["city", "job", "page"];
+    const order = ["city", "job", "page", "category", "date", "keyword"];
 
     const entries = [...params.entries()];
 
@@ -37,5 +37,5 @@ export default function FilterHandler({ e, id, router }
 
     const finalParams = new URLSearchParams(sortedEntries);
 
-    router.push(`?${finalParams.toString()}`);
+    router.push(`/?${finalParams.toString()}`);
 }

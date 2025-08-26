@@ -10,13 +10,11 @@ export default function JobBoard() {
   const searchParams = useSearchParams();
 
   const { data: jobs, isLoading, error } = useJobs();
-  
+
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading jobs</div>;
 
-
   const jobsFiltered = filteredJobs({ searchParams, jobs: jobs || [] });
-
 
   return (
     <div className="w-full flex flex-col items-center">

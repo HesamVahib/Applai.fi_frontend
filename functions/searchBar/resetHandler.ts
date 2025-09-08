@@ -5,9 +5,10 @@ export default function resetHandler({ router, searchParams }: { router: any, se
   // console.log("Current Search Params:", searchParams.toString());
 
   const params = new URLSearchParams(searchParams.toString());
-  params.delete("city");
+  params.delete("location");
   params.delete("category");
   params.delete("date");
   params.delete("keyword");
+  params.delete("page");
   router.push(`?${params.toString()}`);
 }

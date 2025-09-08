@@ -9,7 +9,7 @@ export default function Filters() {
     <>
       <div className="w-full flex justify-center mt-3">
         <div className="w-full flex gap-2">
-          <FilterButton id="city" resetSignal={resetSignal} />
+          <FilterButton id="location" resetSignal={resetSignal} />
           <FilterButton id="date" resetSignal={resetSignal} />
           <FilterButton id="category" resetSignal={resetSignal} />
           <ResetFilterButton resetSignal={resetSignal} setResetSignal={setResetSignal} />

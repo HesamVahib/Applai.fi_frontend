@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import FilterHandler from "@/functions/searchBar/filterHandler";
 import { useRouter } from "next/navigation";
-import useCity from "@/hooks/useCities";
+import useLocations from "@/hooks/useLocations";
 import useCategory from "@/hooks/useCategories";
 import { useState, useEffect } from "react";
 import { FilterButtonProps } from "@/lib/types";
@@ -14,12 +14,12 @@ const classes = {
 export default function FilterButton({id, resetSignal}: FilterButtonProps) {
 
   const router = useRouter();
-  const { data: cities} = useCity();
+  const { data: locations} = useLocations();
   const { data: categories } = useCategory();
 
   const postDate = [ "Last Hour", "Today", "This Week", "This Month" ];
 
-  const options = id === "city" ? cities : id === "category" ? categories : id === "date" ? postDate : [];
+  const options = id === "location" ? locations : id === "category" ? categories : id === "date" ? postDate : [];
   // console.log("Options for", id, ":", options);
   const [ value, setValue ] = useState("All");
 

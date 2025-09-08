@@ -9,7 +9,11 @@ export default function JobBoard() {
 
   const searchParams = useSearchParams();
 
-  const { data: jobs, isLoading, error } = useJobs();
+  const page = searchParams.get("page") || 1;
+  const offset = (Number(page) - 1) * 20;
+  console.log("Current page:", offset);
+
+  const { data: jobs, isLoading, error } = useJobs({ offset: offset });
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading jobs</div>;

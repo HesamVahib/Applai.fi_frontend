@@ -15,7 +15,7 @@ export default function JobCard({ job } : { job: Job }) {
           <h3 className="text-lg font-semibold">{job.title}</h3>
         </a>
         <p className="text-sm text-gray-500 mt-1">
-          {job.company} - {job.city} - {job.date}
+          {job.location} - {job.category}
         </p>
       </div>
       <FavoriteIcon jobId={job.id} />

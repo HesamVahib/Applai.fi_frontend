@@ -2,14 +2,14 @@ export type Job = {
   id: number;
   title: string;
   company: string;
-  city: string;
+  location: string;
   date: string;
   link: string;
   category: string;
 };
 
 export type Filters = {
-  city: string;
+  location: string;
   category: string;
 };
 

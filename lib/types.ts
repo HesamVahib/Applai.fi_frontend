@@ -31,3 +31,10 @@ export type FilterButtonProps = {
     id: string;
     resetSignal: boolean;
 };
+
+export type GetQueryParams = {
+    title?: string;
+    location?: string;
+    category?: string;
+    offset?: number;
+};

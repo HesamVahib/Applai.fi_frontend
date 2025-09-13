@@ -18,6 +18,8 @@ export async function GET(request: NextRequest) {
         if (category) params.append("category", category);
         if (title) params.append("title", title);
 
+        console.log("Fetching jobs with params:", params.toString());
+
 
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/jobs?${params.toString()}`, {
             headers: {

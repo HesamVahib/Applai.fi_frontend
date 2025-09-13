@@ -17,10 +17,10 @@ export default function JobBoard() {
   // console.log("Current page:", offset);
 
   const {
-    data: jobs,
-    isLoading,
-    error,
-  } = useJobs({ offset: offset, location, category, title });
+      data: jobs,
+      isLoading,
+      error,
+        } = useJobs({ offset: offset, location, category, title });
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading jobs</div>;

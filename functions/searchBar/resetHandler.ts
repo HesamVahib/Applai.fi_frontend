@@ -1,4 +1,3 @@
-import { useSearchParams } from "next/navigation";
 
 export default function resetHandler({ router, searchParams }: { router: any, searchParams: URLSearchParams }) {
   if (!searchParams) return;
@@ -8,7 +7,7 @@ export default function resetHandler({ router, searchParams }: { router: any, se
   params.delete("location");
   params.delete("category");
   params.delete("date");
-  params.delete("keyword");
+  params.delete("title");
   params.delete("page");
   router.push(`?${params.toString()}`);
 }

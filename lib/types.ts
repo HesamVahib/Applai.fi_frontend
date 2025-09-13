@@ -29,7 +29,7 @@ export type Theme = 'light' | 'dark';
 
 export type FilterButtonProps = {
     id: string;
-    resetSignal: boolean;
+    resetSignal: boolean | (() => void);
 };
 
 export type GetQueryParams = {

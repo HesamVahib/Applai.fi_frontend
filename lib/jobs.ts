@@ -11,13 +11,11 @@ export async function fetchAllJobs({ offset, location, category, title }: GetQue
                 title
             }
         });
-        if (response.status === 404) {
-            return [];
-        }
-        return response.data.jobs;
+
+        return response.data.jobs || [];
     } catch (error) {
         console.error("Error fetching jobs:", error);
-        throw error;
+        return [];
     }
 }
 

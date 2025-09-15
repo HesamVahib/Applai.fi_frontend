@@ -8,6 +8,7 @@ export function useJobs({ offset, location, category, title }: GetQueryParams) {
         queryKey: ["jobs", { offset, location, category, title }],
         queryFn: () => fetchAllJobs({ offset, location, category, title }),
         placeholderData: keepPreviousData,
+        refetchOnWindowFocus: false,
         staleTime: 5 * 60 * 1000,
     });
 }

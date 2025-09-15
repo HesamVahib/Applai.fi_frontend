@@ -41,13 +41,13 @@ export default function NavbarItems() {
         <div>
           <Toggle />
         </div>
-        <div>
+        {/* <div>
           <li>
             <Button className="h-full mr-2 " onClick={loginButton}>
               Login/Sign Up
             </Button>
           </li>
-        </div>
+        </div> */}
       </ul>
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-800 md:hidden z-50 text-center">

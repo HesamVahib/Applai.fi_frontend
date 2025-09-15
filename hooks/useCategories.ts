@@ -9,5 +9,7 @@ export default function useCategory() {
             const categories = Array.from(new Set(response.map((job) => job.category))).sort();
             return categories;
         },
+        refetchOnWindowFocus: false,
+        staleTime: 5 * 60 * 60 * 1000, // 5 hours
     });
 }

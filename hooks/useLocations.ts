@@ -10,5 +10,7 @@ export default function useLocations() {
             const locationsWOutNull = locations.filter((loc) => loc && loc.trim() !== "");
             return locationsWOutNull;
         },
+        refetchOnWindowFocus: false,
+        staleTime: 5 * 60 * 60 * 1000, // 5 hours
     });
 }

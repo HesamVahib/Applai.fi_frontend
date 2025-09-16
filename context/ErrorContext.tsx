@@ -3,7 +3,12 @@
 import React, { createContext, useReducer } from "react";
 import { ErrorState, ErrorAction } from "@/lib/types";
 
-export const ErrorContext = createContext(null);
+type ErrorContextValue = {
+  state: ErrorState;
+  dispatch: React.Dispatch<ErrorAction>;
+};
+
+export const ErrorContext = createContext<ErrorContextValue  | undefined>(undefined);
 
 const initialState = { error: null };
 
@@ -22,7 +27,7 @@ export function ErrorProvider({ children } : { children: React.ReactNode }) {
         }, initialState);
 
     return (
-        <ErrorContext.Provider value={{ state, dispatch } as any}>
+        <ErrorContext.Provider value={{ state, dispatch }}>
             {children}
         </ErrorContext.Provider>
     );

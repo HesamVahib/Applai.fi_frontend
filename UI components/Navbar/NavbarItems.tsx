@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import Toggle from "../DarkModeToggle";
-import Button from "../Button";
-import loginButton from "@/functions/loginButton";
+import LoginButton from "@/functions/LoginButton";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
@@ -41,13 +40,11 @@ export default function NavbarItems() {
         <div>
           <Toggle />
         </div>
-        {/* <div>
+        <div>
           <li>
-            <Button className="h-full mr-2 " onClick={loginButton}>
-              Login/Sign Up
-            </Button>
+            <LoginButton />
           </li>
-        </div> */}
+        </div>
       </ul>
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-800 md:hidden z-50 text-center">

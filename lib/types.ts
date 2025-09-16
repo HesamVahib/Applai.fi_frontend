@@ -38,3 +38,12 @@ export type GetQueryParams = {
     category?: string;
     offset?: number;
 };
+
+export type ErrorState = {
+    error: string | null;
+};
+
+export type ErrorAction = {
+    type: 'SET_ERROR' | 'CLEAR_ERROR' | null;
+    payload?: string;
+};

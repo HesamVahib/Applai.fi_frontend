@@ -16,19 +16,20 @@ export default function FilterButton({id, resetSignal}: FilterButtonProps) {
   const router = useRouter();
 
   const [ value, setValue ] = useState("All");
-  const { data: locations} = useLocations();
+  const { error, isLoading, data: locations} = useLocations();
   const { data: categories } = useCategory();
 
   useEffect(() => {
     setValue("All");
   }, [resetSignal]);
 
-
   const postDate = [ "Last Hour", "Today", "This Week", "This Month" ];
 
   const options = id === "location" ? locations : id === "category" ? categories : id === "date" ? postDate : [];
   // console.log("Options for", id, ":", options);
   
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error loading {id}</div>;
 
   return (
     <div className="relative w-full">

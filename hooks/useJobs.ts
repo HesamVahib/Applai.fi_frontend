@@ -4,6 +4,7 @@ import { Job, GetQueryParams } from "@/lib/types";
 
 
 export function useJobs({ offset, location, category, title }: GetQueryParams) {
+
     return useQuery<Job[]>({
         queryKey: ["jobs", { offset, location, category, title }],
         queryFn: () => fetchAllJobs({ offset, location, category, title }),

@@ -11,6 +11,7 @@ export default function JobBoard() {
   const page = searchParams.get("page") || 1;
   const location = searchParams.get("location") || "";
   const category = searchParams.get("category") || "";
+
   const title = searchParams.get("title") || "";
   const offset = (Number(page) - 1) * 20;
 

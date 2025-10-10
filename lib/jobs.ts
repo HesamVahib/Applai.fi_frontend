@@ -4,7 +4,7 @@ import { api } from "./api";
 export async function fetchAllJobs({ offset, location, category, title }: GetQueryParams): Promise<Job[]> {
     try {
         // console.log("fetchAllJobs called with:", { offset, location, category, title });
-        
+        // category = category ? decodeURIComponent(category) : category;
         const response = await api.get(`/api/jobs?limit=20`, {
             params: {
                 skip: offset,

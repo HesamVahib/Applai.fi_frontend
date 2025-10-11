@@ -18,7 +18,7 @@ export default function JobCard({ job } : { job: Job }) {
           {job.location} - {job.category}
         </p>
       </div>
-      <FavoriteIcon jobId={job.id} />
+      <FavoriteIcon job={job} />
       </div>
     </article>
 

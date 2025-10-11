@@ -1,9 +1,10 @@
 import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid";
 import FavoriteClick from "@/functions/FavoriteClick";
+import { Job } from "@/lib/types";
 
-export default function FavoriteIcon({ jobId }: { jobId: number }) {
-  const { isFavorited, handleFavoriteClick } = FavoriteClick({ jobId });
+export default function FavoriteIcon({ job }: { job: Job }) {
+  const { isFavorited, handleFavoriteClick } = FavoriteClick({ job: job });
 
   return (
     <button

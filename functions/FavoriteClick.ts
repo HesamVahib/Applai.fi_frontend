@@ -23,15 +23,6 @@ export default function FavoriteClick({ job }: { job: Job }) {
     }
 
     localStorage.setItem('favorite_jobs', JSON.stringify(updatedFavorites));
-    // setIsFavorited(!isFavorited);
-    //   if (isFavorited) {
-    //     localStorage.setItem('favorite_job', JSON.stringify(job));
-    //   }
-    //   else {
-    //     localStorage.removeItem('favorite_job');
-    //   }
-    // console.log(`Job ${job.id} ${isFavorited ? "removed from" : "added to"} favorites`);
-    // console.log(job);
   };
 
   return { isFavorited, handleFavoriteClick };

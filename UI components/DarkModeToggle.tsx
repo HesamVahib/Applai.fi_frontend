@@ -1,6 +1,7 @@
 'use client'
 
-import { SunIcon, MoonIcon} from '@heroicons/react/24/solid';
+import { SunIcon} from '@heroicons/react/24/solid';
+import { MoonIcon } from '@heroicons/react/24/outline';
 import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react';
 
@@ -8,8 +9,10 @@ const toggleClass = {
     div: "flex items-center",
     label: "inline-flex items-center cursor-pointer",
     input: "sr-only peer",
-    body: "relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600",
-    text: "ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+    body: "relative w-6 h-6 peer-focus:outline-none rounded-lg bg-[var(--color-background2)] dark:bg-[var(--color-background2)] peer-checked:bg-[var(--color-background2)] dark:peer-checked:bg-[var(--color-dark-gray)] transition-all flex items-center justify-center",
+    text: "ms-3 text-sm font-medium text-gray-900 dark:text-gray-300",
+    sunIconClass: "absolute w-3.5 h-3.5 text-yellow-400 transition-all",
+    moonIconClass: "absolute w-3.5 h-3.5 transition-all",
 };
 
 export default function Toggle() {
@@ -24,14 +27,14 @@ export default function Toggle() {
             <div className={toggleClass.div}>
             <label className={toggleClass.label}>
                 <input 
-                    type="checkbox"
+                    type=""
                     value=""
                     checked={resolvedTheme === 'dark'}
                     onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                     className={toggleClass.input} />
                     <div className={toggleClass.body}>
-                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all`} />
-                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all`} />
+                        <SunIcon className={toggleClass.sunIconClass} />
+                        <MoonIcon className={toggleClass.moonIconClass} />
                     </div>
             </label>
         </div>
@@ -50,8 +53,8 @@ export default function Toggle() {
                     onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                     className={toggleClass.input} />
                     <div className={toggleClass.body}>
-                        <SunIcon className={`absolute left-1 top-1 w-4 h-4 text-yellow-400 transition-all ${resolvedTheme === 'dark' ? "opacity-100" : "opacity-30"}`} />
-                        <MoonIcon className={`absolute right-1 top-1 w-4 h-4 text-blue-300 transition-all ${resolvedTheme === 'light' ? "opacity-100" : "opacity-30"}`} />
+                        <SunIcon className={`${toggleClass.sunIconClass} ${resolvedTheme === 'dark' ? "opacity-100" : "opacity-10"}`} />
+                        <MoonIcon className={`${toggleClass.moonIconClass} ${resolvedTheme === 'light' ? "opacity-100" : "opacity-10"}`} />
                     </div>
             </label>
         </div>

@@ -5,16 +5,20 @@ import Toggle from "../DarkModeToggle";
 import LoginButton from "@/functions/LoginButton";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+
 
 export default function NavbarItems() {
   const [ isOpen, setIsOpen ] = useState(false);
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    // { label: "Contact", href: "/contact" },
-    { label: "Statistics", href: "/statistics" }
+    { label: "Statistics", href: "/statistics" },
+    { label: "Contact us", href: "/contact" },
+    { label: "About us", href: "/about" },
   ];
+
+  const pathname = usePathname();
 
   return (
     <>
@@ -27,13 +31,14 @@ export default function NavbarItems() {
           )}
         </button>
       </div>
-      <ul className="flex justify-end space-x-4">
+      <ul className="flex space-x-4">
         <div className="hidden md:flex md:space-x-4">
             {navItems.map((item) => (
               <li key={item.label} className="nav-item">
-                <Link href={item.href} className="text-white hover:text-blue-300">
+                <Link href={item.href} className={`text-[var(--color-gray)] dark:text-[var(--color-dark-gray)] hover:text-blue-300 ${pathname === item.href ? "font-bold opacity-100" : "opacity-70"} font-[var(--font-athiti)]`}>
                   {item.label}
                 </Link>
+                <div className={pathname === item.href ? "w-1.5 h-1.5 bg-[var(--color-gray)] rounded-full mx-auto mt-0.5" : ""}></div>
             </li>
             ))}
         </div>

@@ -1,10 +1,18 @@
 'use client'
 
 import { Job } from "@/lib/types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function FavoriteClick({ job }: { job: Job }) {
+
   const [isFavorited, setIsFavorited] = useState(false);
+
+  useEffect(() => {
+    const savedFavorites = localStorage.getItem('favorite_jobs');
+    const favorites = savedFavorites ? JSON.parse(savedFavorites) : [];
+    const exists = favorites.some((fav: Job) => fav.id === job.id);
+    setIsFavorited(exists);
+  }, [job.id]);
 
   const handleFavoriteClick = () => {
     const favorites = JSON.parse(localStorage.getItem('favorite_jobs') || '[]');
@@ -16,6 +24,10 @@ export default function FavoriteClick({ job }: { job: Job }) {
       updatedFavorites = favorites.filter((fav: Job) => fav.id !== job.id);
       setIsFavorited(false);
       console.log(`Job ${job.id} removed from favorites`);
+      if (updatedFavorites.length === 0) {
+        // console.log("No favorite jobs left.");
+        window.location.href = '/';
+      }
     } else {
       updatedFavorites = [...favorites, job];
       setIsFavorited(true);

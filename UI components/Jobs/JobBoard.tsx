@@ -15,9 +15,8 @@ export default function JobBoard() {
   const title = searchParams.get("title") || "";
   const offset = (Number(page) - 1) * 20;
 
+  const favorite_jobs = searchParams.get("favorite") || "";
   
-
-  // console.log("Current page:", offset);
 
   const {
       data: jobs,
@@ -36,10 +35,12 @@ export default function JobBoard() {
     );
   }
 
-  const favorite_jobs = localStorage.getItem('favorite_jobs');
-  const parsedFavorites = favorite_jobs ? JSON.parse(favorite_jobs) : [];
-
-  console.log("Favorite jobs from localStorage:", parsedFavorites);
+  let parsedFavorites = [];
+  if (favorite_jobs === "true") {
+    const savedFavorites = localStorage.getItem('favorite_jobs');
+    parsedFavorites = savedFavorites ? JSON.parse(savedFavorites) : [];
+    // console.log("Favorite jobs from localStorage:", parsedFavorites);
+  }
 
   return (
     <div className="w-full flex flex-col items-center">

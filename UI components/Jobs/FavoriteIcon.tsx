@@ -10,12 +10,14 @@ export default function FavoriteIcon({ job }: { job: Job }) {
   const favorites = savedFavorites ? JSON.parse(savedFavorites) : [];
   const isJobFavorited = favorites.some((fav: Job) => fav.id === job.id);
 
+  // console.log(`Rendering FavoriteIcon: Job ID ${job.id}, isFavorited: ${isFavorited}, isJobFavorited: ${isJobFavorited}`);
+
   return (
     <button
       onClick={() => handleFavoriteClick()}
     >
       <div className="flex items-center">
-        {(isJobFavorited && isFavorited) ? (
+        {(isJobFavorited) ? (
           <HeartSolid className="h-6 w-6 md:h-8 md:w-8 text-red-500" />
         ) : (
           <HeartOutline className="h-6 w-6 md:h-8 md:w-8 text-gray-400   hover:text-red-500" />

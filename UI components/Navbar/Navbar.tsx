@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="relative bg-gray-800 py-1.5 px-2 flex justify-between items-center">
+      <nav className="relative py-3 px-2 flex justify-between items-center bg-background border-b border-[var(--color-stroke)] dark:bg-[var(--color-background)] dark:border-[var(--color-stroke)] ">
         <NavbarLogo />
         <NavbarItems />
       </nav>

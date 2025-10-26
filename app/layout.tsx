@@ -5,6 +5,25 @@ import Navbar from "@/UI components/Navbar/Navbar";
 import QueryProviders from "@/providers/ReactQueryProvider";
 // import { ThemeProvider } from "@/context/ThemeContext";
 import { ThemeProvider } from "../providers/ThemeProvider";
+import { Athiti, Orbitron } from "next/font/google";
+import localFont from "next/font/local";
+
+const bitcount = localFont({
+  variable: "--font-bitcount",
+  src: "./fonts/Bitcount-Regular.ttf",
+});
+
+const athiti = Athiti({
+  variable: "--font-athiti",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +46,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={` ${geistSans.variable} ${geistMono.variable} ${athiti.variable} ${orbitron.variable} ${bitcount.variable} antialiased`}>
       <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`antialiased`}
         >
             <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
               <QueryProviders>

@@ -22,7 +22,7 @@ export default function NavbarItems() {
 
   return (
     <>
-      <div className="md:hidden flex items-center">
+      <div className="md:hidden flex">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <XMarkIcon className="h-6 w-6 text-white" />
@@ -31,24 +31,22 @@ export default function NavbarItems() {
           )}
         </button>
       </div>
-      <ul className="flex space-x-4">
-        <div className="hidden md:flex md:space-x-4">
+      <ul className="flex space-x-4 items-center justify-center">
+        <div className="hidden flex md:flex md:space-x-4">
             {navItems.map((item) => (
               <li key={item.label} className="nav-item">
-                <Link href={item.href} className={`text-[var(--color-gray)] dark:text-[var(--color-dark-gray)] hover:text-blue-300 ${pathname === item.href ? "font-bold opacity-100" : "opacity-70"} font-[var(--font-athiti)]`}>
+                <Link href={item.href} className={`text-[var(--color-gray)] dark:text-[var(--color-dark-gray)] hover:text-blue-300 ${pathname === item.href ? "font-bold opacity-100" : "opacity-70"} font-athiti text-lg pl-1 pt-1 pb-0.5`}>
                   {item.label}
                 </Link>
                 <div className={pathname === item.href ? "w-1.5 h-1.5 bg-[var(--color-gray)] rounded-full mx-auto mt-0.5" : ""}></div>
             </li>
             ))}
         </div>
-        <div>
+        <div className="flex items-center">
           <Toggle />
         </div>
-        <div>
-          <li>
+        <div className="flex items-center justify-center mt-2">
             <LoginButton />
-          </li>
         </div>
       </ul>
       {isOpen && (

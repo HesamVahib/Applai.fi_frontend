@@ -10,7 +10,7 @@ import localFont from "next/font/local";
 
 const bitcount = localFont({
   variable: "--font-bitcount",
-  src: "./fonts/Bitcount-Regular.ttf",
+  src: "./fonts/Bitcount-Regular.woff2",
 });
 
 const athiti = Athiti({

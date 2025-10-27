@@ -15,14 +15,15 @@ export default function FavoriteIcon({ job }: { job: Job }) {
   return (
     <button
       onClick={() => handleFavoriteClick()}
-    >
-      <div className="flex items-center">
-        {(isJobFavorited) ? (
-          <HeartSolid className="h-6 w-6 md:h-8 md:w-8 text-red-500" />
-        ) : (
-          <HeartOutline className="h-6 w-6 md:h-8 md:w-8 text-gray-400   hover:text-red-500" />
-        )}
+      className="cursor-pointer"
+    >{(isJobFavorited) ? (
+      <div className="flex items-center justify-center w-7.5 h-7.5 rounded-full bg-[var(--color-secondary)] transition-colors duration-200"> 
+        <HeartSolid className="h-4 w-4 md:h-4 md:w-4 text-white " />
+      </div>) : (
+      <div className="flex items-center justify-center w-7 h-7 rounded-full bg-[var(--color-background2)] hover:bg-[var(--color-secondary)]/30 transition-colors duration-200">
+        <HeartSolid className="h-4 w-4 md:h-4 md:w-4 text-white" />
       </div>
+    )}
     </button>
   );
 }

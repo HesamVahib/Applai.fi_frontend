@@ -9,7 +9,7 @@ const toggleClass = {
     div: "flex items-center",
     label: "inline-flex items-center cursor-pointer",
     input: "sr-only peer",
-    body: "relative w-6 h-6 peer-focus:outline-none rounded-lg bg-[var(--color-background2)] dark:bg-[var(--color-background2)] peer-checked:bg-[var(--color-background2)] dark:peer-checked:bg-[var(--color-dark-gray)] transition-all flex items-center justify-center",
+    body: "relative w-8 h-8 peer-focus:outline-none rounded-lg bg-[var(--color-background2)] dark:bg-[var(--color-background2)] peer-checked:bg-[var(--color-background2)] dark:peer-checked:bg-[var(--color-dark-gray)] transition-all flex items-center justify-center",
     text: "ms-3 text-sm font-medium text-gray-900 dark:text-gray-300",
     sunIconClass: "absolute w-3.5 h-3.5 text-yellow-400 transition-all",
     moonIconClass: "absolute w-3.5 h-3.5 transition-all",

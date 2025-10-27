@@ -24,10 +24,10 @@ export default function FavoriteClick({ job }: { job: Job }) {
       updatedFavorites = favorites.filter((fav: Job) => fav.id !== job.id);
       setIsFavorited(false);
       console.log(`Job ${job.id} removed from favorites`);
-      if (updatedFavorites.length === 0) {
-        // console.log("No favorite jobs left.");
-        window.location.href = '/';
-      }
+      // if (updatedFavorites.length === 0 && window.location.pathname === '/') {
+      //   // console.log("No favorite jobs left.");
+      //   window.location.href = '/';
+      // }
     } else {
       updatedFavorites = [...favorites, job];
       setIsFavorited(true);

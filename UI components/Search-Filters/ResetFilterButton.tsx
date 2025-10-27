@@ -1,5 +1,7 @@
 import resetHandler from "@/functions/searchBar/resetHandler";
 import { useRouter, useSearchParams } from "next/navigation";
+import { ArrowPathIcon } from '@heroicons/react/24/outline';
+
 
 export default function ResetFilterButton({ resetSignal, setResetSignal } : { resetSignal: boolean; setResetSignal: (value: boolean) => void }) {
   const router = useRouter();
@@ -12,8 +14,8 @@ export default function ResetFilterButton({ resetSignal, setResetSignal } : { re
         // console.log(resetSignal);
         resetHandler({ router, searchParams });
       }}
-      className="h-10 flex items-center justify-center border border-gray-300 text-white font-light md:font-normal rounded-full w-auto py-2.5 px-4 appearance-none relative focus:outline-none bg-blue-500 hover:bg-blue-600">
-      Reset
+      className={`rounded-full ${searchParams.toString() ? "bg-[var(--color-primary)] " : "bg-[var(--color-background2)]"} p-3 cursor-pointer`}>
+      <ArrowPathIcon className={`h-5 w-5 ${searchParams.toString() ? "text-[var(--color-background2)]" : "text-[var(--color-gray)]"}`} />
     </button>
   );
 };

@@ -41,7 +41,7 @@ export default function FilterButton({id, resetSignal}: FilterButtonProps) {
           FilterHandler({ e, id, router });
         }}
         className={classes.select}>
-        <option value="All">All</option>
+        <option value="All">{id === "location" ? "Location" : id === "category" ? "Category" : "Date"}</option>
         {
           options?.map((item, index) => (
             <option key={index} value={item}>

@@ -14,8 +14,9 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: "var(--font-sans)",
-        mono: "var(--font-mono)",
+        athiti: "var(--font-athiti)",
+        bitcount: "var(--font-bitcount)",
+        orbitron: "var(--font-orbitron)",
       },
     },
   },

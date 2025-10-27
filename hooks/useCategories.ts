@@ -32,7 +32,6 @@ export default function useCategory() {
         "Customer Service",
         "Installation and Maintenance",
         "Property Maintenance",
-        "Technology",
         "Education"
         ]
     

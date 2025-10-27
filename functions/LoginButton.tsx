@@ -15,7 +15,7 @@ export default function LoginButton() {
     <div className="flex flex-col items-center gap-2 ">
       <button
         onClick={handleLogin}
-        className="bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-white/80 py-1.5 px-5 rounded-lg transition-colors duration-200 relative -top-1.5 font-light"
+        className="bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-white/80 py-1.25 px-5 rounded-xl transition-colors duration-200 relative -top-1.5 font-athiti"
       >
         Login/Signup
       </button>

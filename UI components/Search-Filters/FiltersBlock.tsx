@@ -31,7 +31,7 @@ export default function Filters() {
         </div>
       </div>
       <div className="w-full flex justify-center">
-        <div className="w-full border-b-2 border-gray-400 mt-3"></div>
+        <div className="w-full mb-5 border-gray-400 mt-3"></div>
       </div>
     </>
   );

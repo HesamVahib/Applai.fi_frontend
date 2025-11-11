@@ -12,6 +12,16 @@ const classes = {
 
 export default function JobCard({ job } : { job: Job }) {
 
+  const createdTime = new Date(job.created_at);
+  const now = new Date();
+  const diffInSeconds = Math.floor((now.getTime() - createdTime.getTime()));
+
+  const timeConverted = Math.floor(diffInSeconds / 1000) < 86400 ? "Today" :
+                        Math.floor(diffInSeconds / (1000 * 60 * 60 * 24)) < 3 ? " Days ago" :
+                        Math.floor(diffInSeconds / (1000 * 60 * 60 * 24)) < 7 ? "Last Week" : "Last Month"
+                        ;
+
+
   return (
     <article className={classes.card}>
       <div className="flex border-gray-300 py-2">
@@ -28,14 +38,14 @@ export default function JobCard({ job } : { job: Job }) {
               href={job.link}
               className="text-[var(--color-primary)]">
               <h3 className={classes.title}>
-                {job.title.length > 35 ? job.title.substring(0, 35) + '...' : job.title}
+                {job.title.length > 30 ? job.title.substring(0, 30) + '...' : job.title}
               </h3>
             </a>
             </div>
             <div className=" mt-2 flex items-center">
               <ClockIcon className="inline-block w-3 h-3 mr-1 text-[var(--color-gray)]/70" />
               <span className={classes.date}>
-                A few seconds ago
+                {timeConverted}
               </span>
             </div>
         </div>

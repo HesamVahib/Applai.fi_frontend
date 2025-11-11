@@ -9,5 +9,6 @@ export default function resetHandler({ router, searchParams }: { router: any, se
   params.delete("date");
   params.delete("title");
   params.delete("page");
+  params.delete("favorite");
   router.push(`?${params.toString()}`);
 }

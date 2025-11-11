@@ -11,18 +11,18 @@ export default function JobBoard() {
   const page = searchParams.get("page") || 1;
   const location = searchParams.get("location") || "";
   const category = searchParams.get("category") || "";
+  const date = searchParams.get("date")?.toLocaleLowerCase() || "";
 
   const title = searchParams.get("title") || "";
   const offset = (Number(page) - 1) * 20;
 
-  const favorite_jobs = searchParams.get("favorite") || "";
-  
+  const favoriteJobs = searchParams.get("favorite") || "";
 
   const {
       data: jobs,
       isLoading,
       error,
-        } = useJobs({ offset: offset, location, category, title });
+    } = useJobs({ offset: offset, location, category, title, date});
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading jobs</div>;
@@ -36,8 +36,8 @@ export default function JobBoard() {
   }
 
   let parsedFavorites = [];
-  if (favorite_jobs === "true") {
-    const savedFavorites = localStorage.getItem('favorite_jobs');
+  if (favoriteJobs === "true") {
+    const savedFavorites = localStorage.getItem("favoriteJobs");
     parsedFavorites = savedFavorites ? JSON.parse(savedFavorites) : [];
     // console.log("Favorite jobs from localStorage:", parsedFavorites);
   }
@@ -45,9 +45,11 @@ export default function JobBoard() {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="w-full">
-        {
-          parsedFavorites.length > 0 ? <JobList jobs={parsedFavorites} /> : <JobList jobs={jobs || []} />
-        }
+        {parsedFavorites.length > 0 ? (
+          <JobList jobs={parsedFavorites} />
+        ) : (
+          <JobList jobs={jobs || []} />
+        )}
       </div>
     </div>
   );

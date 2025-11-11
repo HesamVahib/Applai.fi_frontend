@@ -6,6 +6,7 @@ export type Job = {
   date: string;
   link: string;
   category: string;
+  created_at: string;
 };
 
 export type Filters = {
@@ -37,6 +38,7 @@ export type GetQueryParams = {
     location?: string;
     category?: string;
     offset?: number;
+    date?: string;
 };
 
 export type ErrorState = {

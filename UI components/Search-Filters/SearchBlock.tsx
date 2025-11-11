@@ -5,10 +5,9 @@ import Filters from "./FiltersBlock";
 import ScrollListener from "@/functions/scrollListener";
 
 export default function SearchBlock() {
-    const scrollDirection = ScrollListener();
 
   return (
-    <div className={`w-full relative ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} transition-transform duration-300`}>
+    <div className={`w-full relative`}>
       <SearchBar />
       <Filters />
     </div>

@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 import { FilterButtonProps } from "@/lib/types";
 
 const classes = {
-  select: "h-10 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white hover:cursor-pointer hover:shadow-md",
-  icon: "hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400"
+  select: "h-7 border border-[var(--color-stroke)] text-[var(--color-gray)] text-[14px] font-medium rounded-full block w-full px-3 appearance-none relative focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]/50 bg-[var(--color-background2)] hover:cursor-pointer hover:shadow-md font-athiti",
+  icon: "hidden md:block md:absolute md:top-4 md:-translate-y-2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400 stroke-[var(--color-gray)] stroke-3",
 };
 
 export default function FilterButton({id, resetSignal}: FilterButtonProps) {
@@ -23,16 +23,14 @@ export default function FilterButton({id, resetSignal}: FilterButtonProps) {
     setValue("All");
   }, [resetSignal]);
 
-  const postDate = [ "Last Hour", "Today", "This Week", "This Month" ];
+  const postDate = [ "Today", "Last Week", "Last Month" ];
 
   const options = id === "location" ? locations : id === "category" ? categories : id === "date" ? postDate : [];
   // console.log("Options for", id, ":", options);
   
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error loading {id}</div>;
-
-  return (
-    <div className="relative w-full">
+  if (isLoading)
+    return (
+    <div className="w-full flex justify-center items-center relative">
       <select
         id={id}
         value={value}
@@ -41,14 +39,43 @@ export default function FilterButton({id, resetSignal}: FilterButtonProps) {
           FilterHandler({ e, id, router });
         }}
         className={classes.select}>
-        <option value="All">{id === "location" ? "Location" : id === "category" ? "Category" : "Date"}</option>
-        {
-          options?.map((item, index) => (
-            <option key={index} value={item}>
-              {item}
+        <option value="All">
+          {id === "location" ? "Filter City" : id === "category" ? "Filter Category" : "Filter Date"}
+          </option>
+            {
+            options?.map((item, index) => (
+              <option key={index} value={item}>
+                {item}
             </option>
-          ))
-        }
+              ))
+            }
+    </select>
+    <ChevronDownIcon className={classes.icon} />
+    </div>
+  );
+
+  if (error) return <div>Error loading {id}</div>;
+
+  return (
+    <div className="w-full flex justify-center items-center relative">
+      <select
+        id={id}
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+          FilterHandler({ e, id, router });
+        }}
+        className={classes.select}>
+        <option value="All">
+          {id === "location" ? "Filter City" : id === "category" ? "Filter Category" : "Filter Date"}
+          </option>
+            {
+            options?.map((item, index) => (
+              <option key={index} value={item}>
+                {item}
+            </option>
+              ))
+            }
     </select>
     <ChevronDownIcon className={classes.icon} />
     </div>

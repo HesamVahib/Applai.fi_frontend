@@ -8,7 +8,7 @@ export default function NavbarLogo() {
             src="/logo.svg"
             alt="Logo"
             width={150}
-            height={100}
+            height= {40}
             className="ml-2"
             priority
             />

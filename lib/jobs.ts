@@ -1,7 +1,8 @@
 import type { GetQueryParams, Job } from "./types";
 import { api } from "./api";
 
-export async function fetchAllJobs({ offset, location, category, title }: GetQueryParams): Promise<Job[]> {
+export async function fetchAllJobs({ offset, location, category, title, date }: GetQueryParams): Promise<Job[]> {
+    console.log("fetchAllJobs called with:", { offset, location, category, title, date });
     try {
         // console.log("fetchAllJobs called with:", { offset, location, category, title });
         // category = category ? decodeURIComponent(category) : category;
@@ -10,7 +11,8 @@ export async function fetchAllJobs({ offset, location, category, title }: GetQue
                 skip: offset,
                 location,
                 category,
-                title
+                title,
+                date,
             },
         });
 

@@ -8,14 +8,14 @@ export default function FavoriteClick({ job }: { job: Job }) {
   const [isFavorited, setIsFavorited] = useState(false);
 
   useEffect(() => {
-    const savedFavorites = localStorage.getItem('favorite_jobs');
+    const savedFavorites = localStorage.getItem('favoriteJobs');
     const favorites = savedFavorites ? JSON.parse(savedFavorites) : [];
     const exists = favorites.some((fav: Job) => fav.id === job.id);
     setIsFavorited(exists);
   }, [job.id]);
 
   const handleFavoriteClick = () => {
-    const favorites = JSON.parse(localStorage.getItem('favorite_jobs') || '[]');
+    const favorites = JSON.parse(localStorage.getItem('favoriteJobs') || '[]');
 
     const exists = favorites.some((fav: Job) => fav.id === job.id);
     let updatedFavorites;
@@ -34,7 +34,8 @@ export default function FavoriteClick({ job }: { job: Job }) {
       console.log(`Job ${job.id} added to favorites`);
     }
 
-    localStorage.setItem('favorite_jobs', JSON.stringify(updatedFavorites));
+    localStorage.setItem('favoriteJobs', JSON.stringify(updatedFavorites));
+    window.dispatchEvent(new Event("favorites:changed"));
   };
 
   return { isFavorited, handleFavoriteClick };

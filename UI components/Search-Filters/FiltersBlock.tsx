@@ -2,6 +2,8 @@ import ResetFilterButton from "./ResetFilterButton";
 import FilterButton from "./FilterButton";
 import { useState, useEffect } from "react";
 import { useSearchParams, usePathname } from "next/navigation";
+import FavoriteButton from "./FavoriteButton";
+
 
 export default function Filters() {
   const [resetSignal, setResetSignal] = useState(false);
@@ -16,9 +18,9 @@ export default function Filters() {
                         !searchParams.get("title");
                         
     if (pathname === "/" && hasNoParams) {
-      setResetSignal(prev => !prev);
-    }
-  }, [pathname, searchParams]);
+        setResetSignal(prev => !prev);
+      }
+    }, [pathname, searchParams]);
 
   return (
     <>
@@ -27,6 +29,7 @@ export default function Filters() {
           <FilterButton id="location" resetSignal={resetSignal} />
           <FilterButton id="date" resetSignal={resetSignal} />
           <FilterButton id="category" resetSignal={resetSignal} />
+          <FavoriteButton />
           <ResetFilterButton resetSignal={resetSignal} setResetSignal={setResetSignal} />
         </div>
       </div>

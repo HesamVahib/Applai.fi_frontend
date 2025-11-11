@@ -19,7 +19,7 @@ export default function FilterHandler({ e, id, router }
     const params = new URLSearchParams(window.location.search);
     params.set(id, selectedValues.join(','));
 
-    const order = ["location", "job", "page", "category", "date", "keyword"];
+    const order = ["favorite", "location", "job", "page", "category", "date", "keyword"];
 
     const entries = [...params.entries()];
 

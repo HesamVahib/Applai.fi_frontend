@@ -17,7 +17,7 @@ export default function JobCard({ job } : { job: Job }) {
   const diffInSeconds = Math.floor((now.getTime() - createdTime.getTime()));
 
   const timeConverted = Math.floor(diffInSeconds / 1000) < 86400 ? "Today" :
-                        Math.floor(diffInSeconds / (1000 * 60 * 60 * 24)) < 3 ? " Days ago" :
+                        Math.floor(diffInSeconds / (1000 * 60 * 60 * 24)) < 1 ? "Yesterday" :
                         Math.floor(diffInSeconds / (1000 * 60 * 60 * 24)) < 7 ? "Last Week" : "Last Month"
                         ;
 

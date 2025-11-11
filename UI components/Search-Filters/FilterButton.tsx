@@ -8,7 +8,7 @@ import { FilterButtonProps } from "@/lib/types";
 
 const classes = {
   select: "h-7 border border-[var(--color-stroke)] text-[var(--color-gray)] text-[14px] font-medium rounded-full block w-full px-3 appearance-none relative focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]/50 bg-[var(--color-background2)] hover:cursor-pointer hover:shadow-md font-athiti",
-  icon: "hidden md:block md:absolute md:top-4 md:-translate-y-2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400 stroke-[var(--color-gray)] stroke-3",
+  icon: "hidden md:block md:absolute md:top-4 md:-translate-y-2 md:right-4 md:z-10 md:h-4 md:w-4 md:text-gray-400 stroke-[var(--color-gray)] stroke-3 bg-[var(--color-background2)] pointer-events-none",
 };
 
 export default function FilterButton({id, resetSignal}: FilterButtonProps) {

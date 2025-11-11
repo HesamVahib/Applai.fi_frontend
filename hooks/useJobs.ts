@@ -5,7 +5,15 @@ import { Job, GetQueryParams } from "@/lib/types";
 
 export function useJobs({ offset, location, category, title, date }: GetQueryParams) {
 
-    console.log("useJobs called with:", { offset, location, category, title, date });
+    // console.log("useJobs called with:", { offset, location, category, title, date });
+
+    // if (date === "Today") {
+    //     date = "today";
+    // } else if (date === "Last Week") {
+    //     date = "last_week";
+    // } else if (date === "Last Month") {
+    //     date = "last_month";
+    // }
 
     return useQuery<Job[]>({
         queryKey: ["jobs", { offset, location, category, title, date }],

@@ -15,9 +15,9 @@ export default function ResetFilterButton({ resetSignal, setResetSignal } : { re
   const searchParams = useSearchParams();
   const pathname = usePathname();
 
-  useEffect(() => {
-      router.replace(pathname);
-    }, [pathname, router]);
+  // useEffect(() => {
+  //     router.replace(pathname);
+  //   }, [pathname, router]);
 
   return (
     <button

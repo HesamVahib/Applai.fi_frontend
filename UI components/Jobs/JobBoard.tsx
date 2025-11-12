@@ -3,6 +3,7 @@
 import JobList from "./JobList";
 import { useJobs } from "@/hooks/useJobs";
 import { useSearchParams } from "next/navigation";
+import PageNavigator from "./PagesNavigator";
 // import filteredJobs from "@/functions/searchBar/filteredJobs";
 
 export default function JobBoard() {
@@ -43,7 +44,8 @@ export default function JobBoard() {
   }
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center mt-4">
+      <PageNavigator />
       <div className="w-full">
         {parsedFavorites.length > 0 ? (
           <JobList jobs={parsedFavorites} />
